@@ -4,16 +4,41 @@
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint .",
-    "start": "slc run"
+    "start": "slc run",
+    "webpack": "webpack -w"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
   },
   "dependencies": {
+    "axios": "^0.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.14.0",
+    "cldr-data": "^29.0.2",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
+    "eslint": "^3.4.0",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
     "loopback-datasource-juggler": "^2.19.0",
-    "serve-favicon": "^2.0.1"
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "require": "^2.4.20",
+    "serve-favicon": "^2.0.1",
+    "webpack": "^1.13.2"
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"
