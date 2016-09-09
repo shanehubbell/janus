@@ -1,10 +1,18 @@
-module.exports = function(Slack) {
+var SlackModule = require('node-slack');
+var hookURL = 'https://hooks.slack.com/services/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';
+var slackHook = new SlackModule(hookURL);
 
+module.exports = function(Slack) {
   'use strict';
 
   // Send a message to a slack channel from here
   //
   Slack.sendMessage = function(messagePayload, cb) {
+    slackHook.send({
+      text: messagePayload.text,
+      channel: '#foo',
+      username: 'Bot'
+    })
 
     let result = {};
 
