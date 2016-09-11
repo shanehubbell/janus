@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "pretest": "jshint .",
-    "start": ["node .", "slc run"],
+    "start": "slc run",
     "webpack": "webpack -w"
   },
   "babel": {
@@ -29,6 +29,7 @@
     "eslint": "^3.4.0",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
+    "loopback-connector-mysql": "^2.3.0",
     "loopback-datasource-juggler": "^2.19.0",
     "minimatch": "^3.0.3",
     "node-slack": "0.0.7",
@@ -56,6 +57,6 @@
   },
   "description": "janus coding challenge",
   "engines": {
-      "node": "4.1.1"
-    }
+    "node": "4.1.1"
+  }
 }
