@@ -2,9 +2,10 @@
   "name": "janus",
   "version": "1.0.0",
   "main": "server/server.js",
+  "license": "MIT",
   "scripts": {
     "pretest": "jshint .",
-    "start": "slc run",
+    "start": ["node .", "slc run"],
     "webpack": "webpack -w"
   },
   "babel": {
@@ -29,6 +30,7 @@
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
     "loopback-datasource-juggler": "^2.19.0",
+    "minimatch": "^3.0.3",
     "node-slack": "0.0.7",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
@@ -39,7 +41,8 @@
     "redux-thunk": "^2.1.0",
     "require": "^2.4.20",
     "serve-favicon": "^2.0.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "ycssmin": "^1.0.1"
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"
@@ -51,5 +54,8 @@
     "type": "",
     "url": ""
   },
-  "description": "janus"
+  "description": "janus coding challenge",
+  "engines": {
+      "node": "4.1.1"
+    }
 }
